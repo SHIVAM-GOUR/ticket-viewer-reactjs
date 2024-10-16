@@ -160,13 +160,13 @@ const organizeTickets = (view) => {
     return {};
 };
 
-const TicketsView = ({ view }) => {
+const TicketsView = ({ view, order }) => {
     const columns = organizeTickets(view);
 
     return (
         <div className="tickets-view">
             {Object.entries(columns).map(([columnName, tickets]) => (
-                <TicketColumn key={columnName} title={columnName} tickets={tickets} />
+                <TicketColumn key={columnName} title={columnName} tickets={tickets} order={order}/>
             ))}
         </div>
     );

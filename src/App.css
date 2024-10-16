@@ -8,14 +8,10 @@ header {
   align-items: center;
 }
 
-.headerButton {
-  background-color: red;
+
+button {
   margin: 5px;
 }
-
-/* button {
-  margin: 5px;
-} */
 
 .tickets-view {
   display: flex;
